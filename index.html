@@ -1,6 +1,162 @@
 <!DOCTYPE html>
 <html>
-    <h1>Kolby Samson's GitHub Page</h1>
-    <p>Hi, welcome to my personal GitHub.io page! I'm currently working on adding content to this page, but please view my other projects available on <a href="https://github.com/kosamson">
-    my GitHub profile</a>. Have a great day!</p>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans&display=swap" rel="stylesheet">
+    
+    <style>
+        html { 
+            background-color: #dfe6e9;
+        }
+
+        h1 { 
+            font-size: 70px;
+            font-family: Lato, sans-serif;
+        }
+
+        h2 { 
+            font-size: 40px;
+            font-family: Montserrat, sans-serif;
+            background-color: rgb(34, 110, 202);
+            border-radius: 5px;
+            border-style: solid;
+            border-width: 3px;
+            padding-left: 5px;
+        }
+
+        h3 {
+            font-size: 30px;
+            font-family: Montserrat, sans-serif;
+            margin-bottom: 0px;
+        }
+
+        a { 
+            color: blue;
+        }
+
+        #page-jumps { 
+            font-family:Montserrat, sans-serif;
+            font-size: 25px;
+        }
+
+        .page-jump { 
+            margin: 0px 10px 5px 0px;
+        }
+
+        .grad-date {
+            font-size: 20px;
+            color: darkslategray;
+        }
+
+        .education {
+            margin-top: 5px;
+            margin-bottom: -15px;
+        }
+
+        p { 
+            font-size: 25px;
+            font-family:"Open Sans", sans-serif;
+        }
+
+        li { 
+            font-size: 25px;
+            font-family:"Open Sans", sans-serif;
+        }
+
+        .icon {
+            width: 100px;
+            margin-right: 20px;
+            margin-top: -10px;
+        }
+    </style>
+
+    <head>
+        <title>Kolby Samson Personal Site</title>
+    </head>
+    
+    <main>
+        <body>
+            <label id="top">
+                <h1>Kolby Samson</h1>
+            </label>
+
+            <label id="page-jumps">
+                <a class="page-jump" href="#aboutme">About Me</a>
+                <a class="page-jump" href="#education">Education</a>
+                <a class="page-jump" href="#technical-skills">Technical Skills</a>
+                <a class="page-jump" href="#coursework">Relevant Coursework</a>
+                <a class="page-jump" href="#outside-links">Outside Links</a>
+                <a class="page-jump" href="#contactinfo">Contact Info</a>
+                <a target="blank" href="PersonalProjectsSubpage.html">Personal Projects</a>
+            </label>
+
+            <div>
+                <label id="aboutme">
+                    <h2>About Me</h2>
+                    <p>
+                        Hi, I'm Kolby Samson. I'm a Computer Science and Software Engineering major at the University of Washington-Bothell 
+                        with an interest in software engineering and information security.
+                        <br>
+                        <br>
+                        I am experienced in Java, C++, and Python development
+                        and am open to Software Engineering internship opportunities to gain real-world experience. Thank you for visiting my page!
+                    </p>
+                </label>
+
+                <label id="education">
+                    <h2>Education</h2>
+                    <h3>University of Washington-Bothell</h3>
+                    <p class="education">
+                        Bachelor of Science - BS, Computer Science and Software Engineering, <i>3.88 Cumulative GPA</i>
+                    </p>
+                    <p class="grad-date">September 2019 - June 2022</p>
+                </label>
+
+                <label id="technical-skills">
+                    <h2>Technical Skills</h2>
+                    <h3>Programming Languages</h3>
+                    <ul>
+                        <li>Java</li> 
+                        <li>C++</li>
+                        <li>Python</li>
+                    </ul>
+
+                    <h3>Tools & Technologies</h3>
+                    <ul>
+                        <li>Git</li>
+                        <li>Eclipse</li>
+                        <li>Visual Studio Community</li>
+                        <li>Visual Studio Code</li>
+                    </ul>
+                </label>
+
+                <label id="coursework">
+                    <h2>Relevant Coursework</h2>
+                    <ul>
+                        <li>Object-Oriented Programming in Java (CSS 143)</li>
+                        <li>Data Structures and Algorithms in C++ I & II(CSS 342/343)</li>
+                        <li>Software Engineering (CSS 360)</li>
+                        <li>Technical Writing for Computer Professionals (CSS 301)</li>
+                        <li>Information Assurance and Cybersecurity</li>
+                    </ul>
+                </label>
+
+                <label id="outside-links">
+                    <h2>Outside Links</h2>
+                    
+                    <a href="https://github.com/kosamson" target="blank"><img class="icon" src="https://camo.githubusercontent.com/7710b43d0476b6f6d4b4b2865e35c108f69991f3/68747470733a2f2f7777772e69636f6e66696e6465722e636f6d2f646174612f69636f6e732f6f637469636f6e732f313032342f6d61726b2d6769746875622d3235362e706e67" alt="GitHub"></a>
+                    
+                    <a href="https://www.linkedin.com/in/kolbysamson/" target="blank"><img class="icon" src="data:image/png;base64,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" alt="LinkedIn"></a><br>
+
+                </label>
+
+                <label id="contactinfo">
+                    <h2>Contact Info</h2>
+                    <p>Email: kosamson@uw.edu</p>
+
+                    <label id="page-jumps">
+                        <a href="#top">Jump to Top</a>
+                    </label>
+                </label>
+            </div>
+        </body>
+    </main>
 </html>
