@@ -3,7 +3,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans&display=swap" rel="stylesheet">
     
     <style>
-        html { 
+        body { 
             background-color: #121212;
             color: #FAFAFA;
         }
@@ -12,6 +12,8 @@
             margin-top: -5px;
             font-size: 70px;
             font-family: Lato, sans-serif;
+            margin-bottom: 15px;
+            display: inline-block;
         }
 
         h2 { 
@@ -34,8 +36,9 @@
             margin-bottom: 0px;
         }
 
-        a { 
-            color: blue;
+        .light-mode {
+            background-color: #FAFAFA;
+            color: #121212;
         }
 
         .page-jump { 
@@ -51,9 +54,24 @@
             color: #FAFAFA;
         }
 
-        .grad-date {
+        .dl-toggle {
+            font-family: Montserrat, sans-serif;
             font-size: 20px;
-            color: darkslategray;
+            margin: 0px 10px 10px 10px;
+            float: right;
+            cursor: pointer;
+
+            background-color: #f0932b;
+            border-radius: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            color: #FAFAFA;
+        }
+
+        .grad-date {
+            font-size: 17px;
+            padding-left: 15px;
+            margin-top: 15px;
         }
 
         .education {
@@ -80,6 +98,13 @@
         }
     </style>
 
+    <script>
+        function toggleLightMode() {
+            var body = document.body;
+            body.classList.toggle("light-mode");
+        }
+    </script>
+
     <head>
         <title>Kolby Samson Personal Site</title>
     </head>
@@ -89,6 +114,11 @@
             <label id="top">
                 <h1>Kolby Samson</h1>
             </label>
+
+            <button class="dl-toggle" type="button" onclick="toggleLightMode()">Toggle Light/Dark Mode</button>
+
+            <br>
+            <br>
 
             <label id="page-jumps">
                 <a class="page-jump" href="#aboutme">About Me</a>
